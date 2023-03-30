@@ -1,0 +1,76 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ff8c00;
+    background-image: linear-gradient(45deg, #b36200 25%, #d67600 25%, #d67600 50%, #b36200 50%, #b36200 75%, #d67600 75%, #d67600 100%);
+    background-size: 5.66px 5.66px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.carrouselBanner {
+    /* */
+    background-color: #2B36B3;
+    background: linear-gradient(pink, hotpink);
+
+    width: 100%;
+    aspect-ratio: 2/1;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /**/ display: flex;
+    justify-content: center;
+    align-items: flex-end;  
+
+}
+.carousel-caption{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.500);
+    background-color: rgba(0, 0, 0, 0.400);
+}
+
+.carrouselBanner > div{
+color: whitesmoke;
+font-size: 2em;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.500);
+font-weight: 900;
+text-transform: uppercase;
+display: none;
+}
+
+.carrouselBanner > img{
+    /* */max-width: 50%; 
+}
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    /*  */.carrouselBanner {
+
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 30px;
+    }
+
+    .carrouselBanner > img{
+        max-width: 20%;
+    }
+
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {}
