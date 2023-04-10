@@ -1,7 +1,7 @@
 <?php
 // (void) -> string
 
-function generateContent() {
+function generateContent(): string {
     $exite_funcion = false;
 
     if($exite_funcion) {
