@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "nombre": "Producto 1",
+      "precio": 100,
+      "imagen": "https://picsum.photos/200/200",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultricies, nunc nisl aliquet nisl, eget aliquet nisl ni"
+    },
+    {
+      "nombre": "Producto 2",
+        "precio": 200,
+        "imagen": "https://picsum.photos/200/200",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultricies, nunc nisl aliquet nisl, eget aliquet nisl ni"
+    }
+  ],
+  "titulo": "Productos",
+  "mensaje": "Productos encontrados"
+}

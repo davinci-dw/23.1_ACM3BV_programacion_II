@@ -1,33 +1,10 @@
 <?php
 // (void) -> string
-function getContent() {
-    return [
-        [
-            "nombre" => "Producto 1",
-            "precio" => 100,
-            "imagen" => "https://picsum.photos/200/200",
-            "descripcion" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultricies, nunc nisl aliquet nisl, eget aliquet nisl ni"
-        ],
-        [
-            "nombre" => "Producto 2",
-            "precio" => 200,
-            "imagen" => "https://picsum.photos/200/200",
-            "descripcion" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultricies, nunc nisl aliquet nisl, eget aliquet nisl ni"
-        ],
-        [
-            "nombre" => "Producto 3",
-            "precio" => 300,
-            "imagen" => "https://picsum.photos/200/200",
-            "descripcion" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultricies, nunc nisl aliquet nisl, eget aliquet nisl ni"
-        ],
-        [
-            "nombre" => "Producto 4",
-            "precio" => 400,
-            "imagen" => "https://picsum.photos/200/200",
-            "descripcion" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultricies, nunc nisl aliquet nisl, eget aliquet nisl ni"
-        ]
 
-    ];
+function getContent() {
+    $content = file_get_contents("products.json"); //string
+    $contentConversion = json_decode($content, true); //object
+    return $contentConversion["products"];
 }
 
 function generateContent($list): string {
