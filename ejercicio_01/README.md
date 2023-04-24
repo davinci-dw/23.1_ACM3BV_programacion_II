@@ -5,3 +5,9 @@
 - Envíen los datos a un archivo .php utilizando el método que más les guste (GET o POST).
 - Obtengan los datos enviados por el formulario y preséntenlos al usuario utilizando PHP, HTML Y CSS.
 
+# PUNTOS EXTRA (Para los que se animen)
+- Utilicen PHP para generar los campos del formulario (Declarando las películas en un Array)
+- Cuenten cuantas de las 10 películas selecciono el usuario e infórmenlo.
+- Si alguno se anima a intentar un condicional (para imprimir mensajes distintos dependiendo del número), sepan que funcionan casi-casi igual que en JavaScript
+- Incorporen Bootstrap para darle formato a su formulario.
+
