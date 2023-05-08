@@ -1,9 +1,22 @@
 <?php
 // (void) -> string
 require_once "classes/Conection.php";
+require_once "classes/Product.php";
 
-$ObjConection = new Conection();
-$conection = $ObjConection->getConection();
+
+function getDbProducts() {
+    $ObjConection = new Conection();
+    $conection = $ObjConection->getConection();
+
+    $query = "SELECT * FROM `products`";
+    $PDO = $conection->prepare($query);
+    $PDO->setFetchMode(PDO::FETCH_CLASS, "Product");
+    $PDO->execute();
+
+    $products = $PDO->fetchAll();
+
+    return $products;
+}
 
 function getContent() {
     $content = file_get_contents("products.json"); //string
