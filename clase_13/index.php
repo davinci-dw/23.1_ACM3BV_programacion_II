@@ -1,11 +1,11 @@
 <?php
 // (void) -> string
-require_once "classes/Conection.php";
+require_once "classes/Connection.php";
 require_once "classes/Product.php";
 
 
 function getDbProducts() {
-    $ObjConection = new Conection();
+    $ObjConection = new Connection();
     $conection = $ObjConection->getConection();
 
     $query = "SELECT * FROM `products`";
